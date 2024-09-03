@@ -14,7 +14,7 @@ import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
 import { scale, verticalScale } from "react-native-size-matters";
-import CustomTextInput from "../../../components/CustomTextInput";
+import CustomTextInput from "../../../components/CustomInput";
 import CustomButton from "../../../components/CustomButton";
 import { font } from "../../../utils/font";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";

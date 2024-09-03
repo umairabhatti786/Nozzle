@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Login from "../../screens/auth/Login";
-import Signup from "../../screens/auth/Signup";
-import GetStarted from "../../screens/auth/GetStarted";
-import ForgetPassword from "../../screens/auth/ForgetPassword";
-import Verification from "../../screens/auth/Verification";
-import CreatePassword from "../../screens/auth/CreatePassword";
-import OnBoarding from "../../screens/auth/OnBoarding";
-import SelectGame from "../../screens/main/SelectGame";
-import BottomTab from "../BottomTabs";
-import UpcommingMatches from "../../screens/main/UpcommingMatches";
-import Language from "../../screens/main/Language";
-import Integration from "../../screens/main/Integration";
-import Premium from "../../screens/main/Premium";
-import SettingsScreen from "../../screens/main/SettingsScreen";
-import Notification from "../../screens/main/Notification";
+import OnboardingScreen from "../../screens/auth/Oboarding";
+import RegisterScreen from "../../screens/auth/Register";
+import CharacteristicsForm from "../../screens/auth/CharacteristicsForm";
+import UploadPhoto from "../../screens/auth/UploadPhoto";
+import ScannigInstructions from "../../screens/auth/ScannigInstructions";
+import AfterScanning from "../../screens/auth/AfterScanning";
+import Scanning from "../../screens/auth/Scanning";
+
 
 const AppStack = () => {
   const Stack = createStackNavigator();
@@ -34,24 +27,21 @@ const AppStack = () => {
         },
       }}
     >
-      <Stack.Screen name={"OnBoarding"} component={OnBoarding} />
-      <Stack.Screen name={"GetStarted"} component={GetStarted} />
-      <Stack.Screen name={"Login"} component={Login} />
-      <Stack.Screen name={"ForgetPassword"} component={ForgetPassword} />
-      <Stack.Screen name={"Verification"} component={Verification} />
-      <Stack.Screen name={"CreatePassword"} component={CreatePassword} />
-      <Stack.Screen name={"SelectGame"} component={SelectGame} />
+      <Stack.Screen name={"OnBoarding"} component={OnboardingScreen} />
+      <Stack.Screen name={"RegisterScreen"} component={RegisterScreen} />
+      <Stack.Screen name={"CharacteristicsForm"} component={CharacteristicsForm} />
+      <Stack.Screen name={"UploadPhoto"} component={UploadPhoto} />
+      <Stack.Screen name={"ScannigInstructions"} component={ScannigInstructions} />
+      <Stack.Screen name={"AfterScanning"} component={AfterScanning} />
+      <Stack.Screen name={"Scanning"} component={Scanning} />
+
+
+
+
+     
 
       
 
-      <Stack.Screen name={"Signup"} component={Signup} />
-      <Stack.Screen name={"BottomTab"} component={BottomTab} />
-      <Stack.Screen name={"UpcommingMatches"} component={UpcommingMatches} />
-      <Stack.Screen name={"Language"} component={Language} />
-      <Stack.Screen name={"Integration"} component={Integration} />
-      <Stack.Screen name={"Premium"} component={Premium} />
-      <Stack.Screen name={"SettingsScreen"} component={SettingsScreen} />
-      <Stack.Screen name={"Notification"} component={Notification} />
 
 
 

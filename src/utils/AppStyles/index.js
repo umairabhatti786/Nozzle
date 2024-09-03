@@ -26,8 +26,11 @@ export const appStyles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.black,
   },
-  rootContainer: {
+  Container: {
     flex: 1,
-    backgroundColor: colors.white,
   },
+  main:{
+    width:"100%",
+    height:"100%"
+  }
 });
