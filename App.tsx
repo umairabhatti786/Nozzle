@@ -2,6 +2,7 @@ import { View, Text, LogBox, TouchableOpacity, Image, StatusBar } from "react-na
 import React from "react";
 import RootNavigator from "./src/routes";
 import { Provider } from "react-redux";
+import store from "./src/redux/store";
 ;
 
 LogBox.ignoreLogs(["VirtualizedLists", "Warning:..."]);
@@ -11,7 +12,12 @@ const App = () => {
  
   
   return (
-                <RootNavigator />
+    <Provider store={store}>
+      
+                      <RootNavigator />
+
+
+    </Provider>
 
 
 

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { View, Image, StyleSheet, ImageBackground,TouchableOpacity } from "react-native";
+import { View, Image, StyleSheet, ImageBackground,TouchableOpacity, Linking } from "react-native";
 import { scale, verticalScale } from "react-native-size-matters";
 import ScreenLayout from "../../../components/ScreenLayout";
 import CustomText from "../../../components/CustomText";
@@ -57,7 +57,14 @@ const CompanyModal = ({ navigation,setIsModalVisible,isModalVisible }: any) => {
               text={"Please contact us at "}
             />
             <Spacer height={verticalScale(15)} />
-            <CustomText
+            <TouchableOpacity
+            onPress={()=>{
+              Linking.openURL("https://www.nozzle.be/")
+              setIsModalVisible(false)
+
+            }}
+            >
+               <CustomText
               size={16}
               fontFam={font.Inter_Regular}
               style={{ textAlign: "center" }}
@@ -65,6 +72,10 @@ const CompanyModal = ({ navigation,setIsModalVisible,isModalVisible }: any) => {
               color={colors.blue}
               text={"hello@nozzle.be"}
             />
+
+            </TouchableOpacity>
+
+           
             <Spacer height={verticalScale(15)} />
           </View>
         </View>

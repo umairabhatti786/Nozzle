@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014824457850",
+    "project_id": "noozle-app",
+    "storage_bucket": "noozle-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014824457850:android:e37b6ce49d6bd42cae0dc3",
+        "android_client_info": {
+          "package_name": "com.nozzle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtVNxLsIJyfJAiO-YM-ZRgKt0ekCmjfOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

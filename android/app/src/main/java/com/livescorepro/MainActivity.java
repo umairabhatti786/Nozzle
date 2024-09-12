@@ -1,4 +1,4 @@
-package com.livescorepro;
+package com.nozzle;
 import android.os.Bundle; // here
 
 import com.facebook.react.ReactActivity;
